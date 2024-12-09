@@ -1,0 +1,105 @@
+/* General Styles for the body */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+/* General Styles for the the control pannel */
+.controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 70px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+}
+/* General styles for sliders */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 500px; /* Largura do slider */
+    height: 50px; /* Altura do slider */
+    background: #ddd; /* Cor de fundo do slider */
+    border-radius: 20px; /* Bordas arredondadas */
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+ /* General styles for the slider thumb in Firefox */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px; /* Tamanho do cursor do slider */
+    height: 50px;
+    background: #007bff; /* Cor do cursor */
+    border-radius: 50%; /* Cursor redondo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 50px;
+    background: #007bff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+/* Change thumb color on hover */
+input[type="range"]:hover::-webkit-slider-thumb {
+    background: #0056b3; 
+}
+
+/* Change thumb color on hover for Firefox */
+input[type="range"]:hover::-moz-range-thumb {
+    background: #0056b3; 
+}
+
+/* Checkbox definitions */
+input[type="checkbox"] {
+    width: 50px; 
+    height: 50px; 
+}
+
+/* Style for the footer */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    text-align: center;
+}
+
+/* Style for the footer text*/
+.footer p {
+    margin: 0;
+    color: #333;
+}

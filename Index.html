@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="2101521-EfolioB" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Controls section for user inputs -->
+    <div class="controls">
+        <label>
+            <!-- Slider to control the speed of planetary motion -->
+            Translation Speed:
+            <input type="range" id="speedSlider" min="1" max="20" value="10">
+        </label>
+        <label>
+            <!-- Slider to control the number of stars displayed -->
+            Number of Stars:
+            <input type="range" id="starSlider" min="0" max="10000" value="4500">
+        </label>
+        <label>
+             <!-- Checkbox to toggle realistic mode -->
+            Realistic Mode:
+            <input type="checkbox" id="realisticToggle">
+        </label>
+    </div>
+    <footer class="footer">
+        <p>
+             <!-- Note explaining user interactions and recommendations -->
+            📝 <strong>Note:</strong> Use the mouse keys to navigate through the solar system. In realistic mode, decrease the number of stars, reduce speed and do 
+            <em>zoom in</em> or <em>zoom out</em> to observe the planets more accurately.
+        </p>
+    </footer>
+    <!-- Main JavaScript file for functionality -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
